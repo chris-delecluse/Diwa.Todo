@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\..\Starter\Diwa.Todo\Diwa.Todo.ServiceDefaults\Diwa.Todo.ServiceDefaults.csproj" />
+      <ProjectReference Include="..\..\Diwa.Todo.Client.Application\Diwa.Todo.Client.Application.csproj" />
+      <ProjectReference Include="..\Diwa.Todo.HttpClient.Adapter\Diwa.Todo.HttpClient.Adapter.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.2" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="wwwroot\bootstrap\bootstrap.min.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\bootstrap\bootstrap.min.css.map" />
+    </ItemGroup>
+
+</Project>

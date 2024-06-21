@@ -1,0 +1,6 @@
+@Diwa.Todo.Api.Adapter_HostAddress = http://localhost:5063
+
+GET {{Diwa.Todo.Api.Adapter_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

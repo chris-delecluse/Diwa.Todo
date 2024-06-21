@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <IsAspireHost>true</IsAspireHost>
+        <UserSecretsId>7290B96F-6A45-4E15-AF6B-AC0FFF054479</UserSecretsId>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Aspire.Hosting.AppHost" Version="8.0.1"/>
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\..\Clients\Adapters\Diwa.Todo.BlazorUI.Adapter\Diwa.Todo.BlazorUI.Adapter.csproj" />
+      <ProjectReference Include="..\..\..\Servers\Adapters\Diwa.Todo.Api.Adapter\Diwa.Todo.Api.Adapter.csproj" />
+    </ItemGroup>
+
+</Project>

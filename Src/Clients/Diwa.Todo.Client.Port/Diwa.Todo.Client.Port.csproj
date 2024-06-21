@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\Common\Diwa.Todo.Common.DataModels\Diwa.Todo.Common.DataModels.csproj" />
+      <ProjectReference Include="..\Diwa.Todo.Client.Protocol\Diwa.Todo.Client.Protocol.csproj" />
+    </ItemGroup>
+
+</Project>

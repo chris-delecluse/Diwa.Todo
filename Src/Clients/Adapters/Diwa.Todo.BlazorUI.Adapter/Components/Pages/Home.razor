@@ -1,0 +1,21 @@
+﻿@page "/"
+
+<h3 class="text-center text-2xl">Todo</h3>
+
+<div>
+    @foreach (var item in HomeViewModel.Items)
+    {
+        <p>@item.Text</p>
+    }
+</div>
+
+@code {
+
+    [Inject] private HomeViewModel HomeViewModel { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        await HomeViewModel.LoadTodoItems();
+    }
+
+}
